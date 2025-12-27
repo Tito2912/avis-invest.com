@@ -1,0 +1,64 @@
+# robots.txt - avis-invest.com
+# Indexation des pages FR/EN principales + ressources utiles
+
+User-agent: SemrushBot
+Disallow:
+
+User-agent: SemrushBot-SA
+Disallow:
+
+User-agent: *
+Allow: /$
+Allow: /blog
+Allow: /blog/
+Allow: /blog.html
+Allow: /blog-1
+Allow: /blog-1/
+Allow: /blog-1.html
+Allow: /mentions-legales
+Allow: /mentions-legales/
+Allow: /mentions-legales.html
+Allow: /politiques-de-confidentialite
+Allow: /politiques-de-confidentialite/
+Allow: /politiques-de-confidentialite.html
+Allow: /en/
+Allow: /en/$
+Allow: /en/blog
+Allow: /en/blog/
+Allow: /en/blog.html
+Allow: /en/blog-1
+Allow: /en/blog-1/
+Allow: /en/blog-1.html
+Allow: /en/legal-notice
+Allow: /en/legal-notice/
+Allow: /en/legal-notice.html
+Allow: /en/privacy-policy
+Allow: /en/privacy-policy/
+Allow: /en/privacy-policy.html
+Allow: /sources/
+Allow: /sources/etoro-fr
+Allow: /sources/etoro-en
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /favicon.ico
+Allow: /style.css
+Allow: /style.min.css
+Allow: /main.js
+Allow: /main.min.js
+Allow: /llms.txt
+Allow: /images/
+Allow: /videos/
+Allow: /fonts/
+Disallow: /temp_etoro.html
+Disallow: /temp_llms.html
+Disallow: /temp_llms_index.qmd
+Disallow: /temp_llms_readme.md
+Disallow: /help_en.html
+Disallow: /*?
+
+Sitemap: https://avis-invest.com/sitemap.xml
+
+
+
+
+

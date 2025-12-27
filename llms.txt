@@ -1,0 +1,21 @@
+# Avis Invest
+
+> Independent reviews and guides about online trading platforms for francophone investors.
+
+We allow conventional search engines to crawl the site but request that language-model crawlers and training agents refrain from collecting or using the content for model training. Technical enforcement details remain in `robots.txt`.
+
+- Policy: https://avis-invest.com/politiques-de-confidentialite.html
+- Contact: contact.ecomshopfrance@gmail.com
+
+## Key Pages
+- [Homepage](https://avis-invest.com/): Overview of our broker reviews and comparisons.
+- [Trading Blog](https://avis-invest.com/blog.html): Articles covering platform evaluations and investing tips.
+- [Legal Notice](https://avis-invest.com/mentions-legales.html): Corporate and regulatory disclosures.
+- [Privacy Policy](https://avis-invest.com/politiques-de-confidentialite.html): Data collection and usage details.
+- [Sitemap](https://avis-invest.com/sitemap.xml): Complete list of public URLs.
+
+## English Resources
+- [Homepage (EN)](https://avis-invest.com/en/index.html): Summary for English-speaking readers.
+- [Legal Notice (EN)](https://avis-invest.com/en/legal-notice.html): Company and compliance information.
+- [Privacy Policy (EN)](https://avis-invest.com/en/privacy-policy.html): English translation of our privacy commitments.
+- [Blog (EN)](https://avis-invest.com/en/blog.html): Selected articles available in English.
