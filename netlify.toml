@@ -77,6 +77,11 @@
     X-Robots-Tag = "index, follow"
 
 [[headers]]
+  for = "/blog-2"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
   for = "/mentions-legales.html"
   [headers.values]
     X-Robots-Tag = "index, follow"
@@ -129,6 +134,11 @@
 
 [[headers]]
   for = "/en/blog-1"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/en/blog-2"
   [headers.values]
     X-Robots-Tag = "index, follow"
 

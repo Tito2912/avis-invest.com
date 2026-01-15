@@ -1,8 +1,19 @@
 # _redirects - avis-invest.com
 
+# 0) Canonical host (avoid redirect chains)
+http://www.avis-invest.com/*                 https://avis-invest.com/:splat                 301!
+https://www.avis-invest.com/*                https://avis-invest.com/:splat                 301!
+http://avis-invest.com/*                     https://avis-invest.com/:splat                 301!
+
 # 0) Fichiers techniques - jamais rediriges
 /sitemap.xml                             /sitemap.xml                             200
 /robots.txt                              /robots.txt                              200
+
+# 0b) Legacy paths
+/en/sources/etoro-en                      /sources/etoro-en                          301
+/en/sources/etoro-en/                     /sources/etoro-en                          301
+/en/sources/etoro-fr                      /sources/etoro-fr                          301
+/en/sources/etoro-fr/                     /sources/etoro-fr                          301
 
 # 1) Exceptions assets (toujours servies telles quelles)
 /style.css                               /style.css                               200
