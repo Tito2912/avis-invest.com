@@ -32,6 +32,16 @@
   </url>
 
   <url>
+    <loc>https://avis-invest.com/blog-2/</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/blog-2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/blog-2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/blog-2/"/>
+  </url>
+
+  <url>
     <loc>https://avis-invest.com/mentions-legales/</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>yearly</changefreq>
@@ -80,6 +90,16 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/blog-1/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/blog-1/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/blog-1/"/>
+  </url>
+
+  <url>
+    <loc>https://avis-invest.com/en/blog-2/</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/blog-2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/blog-2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/blog-2/"/>
   </url>
 
   <url>

@@ -15,6 +15,14 @@ http://avis-invest.com/*                     https://avis-invest.com/:splat     
 /en/sources/etoro-fr                      /sources/etoro-fr                          301
 /en/sources/etoro-fr/                     /sources/etoro-fr                          301
 
+# 0c) Canonical sources URLs (avoid duplicates)
+/sources/etoro-en.html                    /sources/etoro-en                          301
+/sources/etoro-en/                        /sources/etoro-en                          301
+/sources/etoro-en                         /sources/etoro-en.html                     200
+/sources/etoro-fr.html                    /sources/etoro-fr                          301
+/sources/etoro-fr/                        /sources/etoro-fr                          301
+/sources/etoro-fr                         /sources/etoro-fr.html                     200
+
 # 1) Exceptions assets (toujours servies telles quelles)
 /style.css                               /style.css                               200
 /style.min.css                           /style.min.css                           200
@@ -30,6 +38,8 @@ http://avis-invest.com/*                     https://avis-invest.com/:splat     
 /blog-1/                                  /blog-1/index.html                      200
 /blog-1                                   /blog-1/                                301
 /blog-1.html                              /blog-1/                                301
+/blog-2/                                  /blog-2/index.html                      200
+/blog-2                                   /blog-2/                                301
 /mentions-legales/                        /mentions-legales/index.html            200
 /mentions-legales                         /mentions-legales/                      301
 /mentions-legales.html                    /mentions-legales/                      301
@@ -48,6 +58,8 @@ http://avis-invest.com/*                     https://avis-invest.com/:splat     
 /en/blog-1/                              /en/blog-1/index.html                    200
 /en/blog-1                               /en/blog-1/                              301
 /en/blog-1.html                          /en/blog-1/                              301
+/en/blog-2/                              /en/blog-2/index.html                    200
+/en/blog-2                               /en/blog-2/                              301
 /en/legal-notice/                        /en/legal-notice/index.html              200
 /en/legal-notice                         /en/legal-notice/                        301
 /en/legal-notice.html                    /en/legal-notice/                        301
