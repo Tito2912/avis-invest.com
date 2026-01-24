@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://avis-invest.com/</loc>
-    <lastmod>2026-01-21</lastmod>
+    <lastmod>2026-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/"/>
@@ -64,7 +64,7 @@
   <!-- EN -->
   <url>
     <loc>https://avis-invest.com/en/</loc>
-    <lastmod>2026-01-21</lastmod>
+    <lastmod>2026-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/"/>
