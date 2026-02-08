@@ -32,6 +32,8 @@ http://avis-invest.com/*                     https://avis-invest.com/:splat     
 
 # 2) URLs propres (FR) - canonical sans extension
 /                                         /index.html                             200
+/bitpanda/                                 /bitpanda/index.html                   200
+/bitpanda                                  /bitpanda/                             301
 /blog/                                    /blog/index.html                        200
 /blog                                     /blog/                                  301
 /blog.html                                /blog/                                  301
@@ -52,6 +54,8 @@ http://avis-invest.com/*                     https://avis-invest.com/:splat     
 # 3) URLs propres (EN)
 /en/                                     /en/index.html                           200
 /en                                      /en/                                     301
+/en/bitpanda/                             /en/bitpanda/index.html                 200
+/en/bitpanda                              /en/bitpanda/                           301
 /en/blog/                                /en/blog/index.html                      200
 /en/blog                                 /en/blog/                                301
 /en/blog.html                            /en/blog/                                301

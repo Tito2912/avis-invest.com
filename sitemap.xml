@@ -15,6 +15,19 @@
 </url>
 
   <url>
+    <loc>https://avis-invest.com/bitpanda/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/bitpanda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/bitpanda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/bitpanda/"/>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/bitpanda/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/bitpanda/"/>
+</url>
+
+  <url>
     <loc>https://avis-invest.com/blog/</loc>
     <lastmod>2025-08-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -91,6 +104,19 @@
   
     <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/"/>
+</url>
+
+  <url>
+    <loc>https://avis-invest.com/en/bitpanda/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/bitpanda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/bitpanda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/bitpanda/"/>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/bitpanda/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/bitpanda/"/>
 </url>
 
   <url>
@@ -184,6 +210,5 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/sources/etoro-en"/>
 </url>
 </urlset>
-
 
 

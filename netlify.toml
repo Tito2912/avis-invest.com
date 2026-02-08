@@ -57,6 +57,16 @@
     X-Robots-Tag = "index, follow"
 
 [[headers]]
+  for = "/bitpanda/"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/bitpanda"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
   for = "/blog.html"
   [headers.values]
     X-Robots-Tag = "index, follow"
@@ -119,6 +129,16 @@
 
 [[headers]]
   for = "/en/"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/en/bitpanda/"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/en/bitpanda"
   [headers.values]
     X-Robots-Tag = "index, follow"
 

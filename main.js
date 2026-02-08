@@ -104,11 +104,25 @@ const runWhenIdle = (cb, timeout = 800) => {
   });
 })();
 
+/* ---------- Affiliate targets (centralized) ---------- */
+const AFFILIATE_TARGETS = {
+  // TODO: replace with your Bitpanda affiliate URL
+  bitpanda: 'https://www.bitpanda.com/'
+};
+
+function resolveAffiliateTarget(value) {
+  if (!value) return null;
+  // direct URL
+  if (/^https?:\/\//i.test(value)) return value;
+  // key -> URL
+  return AFFILIATE_TARGETS[value] || null;
+}
+
 /* ---------- Liens affiliés : éviter les 403 pour les bots ---------- */
 function hydrateAffiliateLinks() {
   if (isBot()) return;
   $$('a[data-aff]').forEach((link) => {
-    const target = link.getAttribute('data-aff');
+    const target = resolveAffiliateTarget(link.getAttribute('data-aff'));
     if (!target || link.dataset.affHydrated) return;
 
     link.setAttribute('href', target);
@@ -128,6 +142,7 @@ function initLang() {
   const mapToEN = (path) => {
     // Support legacy .html URLs and new canonical clean paths
     if (path === '/' || path === '/index.html') return '/en/';
+    if (path === '/bitpanda' || path === '/bitpanda/index.html') return '/en/bitpanda/';
     if (path === '/blog.html' || path === '/blog') return '/en/blog/';
     if (path === '/blog-1.html' || path === '/blog-1') return '/en/blog-1/';
     if (path === '/mentions-legales.html' || path === '/mentions-legales') return '/en/legal-notice/';
@@ -136,6 +151,7 @@ function initLang() {
   };
   const mapToFR = (path) => {
     if (path === '/en/' || path === '/en/index.html') return '/';
+    if (path === '/en/bitpanda' || path === '/en/bitpanda/index.html') return '/bitpanda/';
     if (path === '/en/blog.html' || path === '/en/blog') return '/blog/';
     if (path === '/en/blog-1.html' || path === '/en/blog-1') return '/blog-1/';
     if (path === '/en/legal-notice.html' || path === '/en/legal-notice') return '/mentions-legales/';
