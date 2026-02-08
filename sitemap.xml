@@ -9,7 +9,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/blog/</loc>
@@ -19,7 +22,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/blog/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/blog/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/blog-1/</loc>
@@ -29,7 +35,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/blog-1/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/blog-1/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/blog-1/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/blog-1/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/blog-1/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/blog-2/</loc>
@@ -39,7 +48,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/blog-2/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/blog-2/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/blog-2/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/blog-2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/blog-2/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/mentions-legales/</loc>
@@ -49,7 +61,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/mentions-legales/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/legal-notice/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/mentions-legales/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/legal-notice/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/politiques-de-confidentialite/</loc>
@@ -59,7 +74,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/politiques-de-confidentialite/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/privacy-policy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/politiques-de-confidentialite/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/privacy-policy/"/>
+</url>
 
   <!-- EN -->
   <url>
@@ -70,7 +88,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/en/blog/</loc>
@@ -80,7 +101,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/blog/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/blog/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/en/blog-1/</loc>
@@ -90,7 +114,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/blog-1/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/blog-1/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/blog-1/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/blog-1/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/blog-1/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/en/blog-2/</loc>
@@ -100,7 +127,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/blog-2/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/blog-2/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/blog-2/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/blog-2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/blog-2/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/en/legal-notice/</loc>
@@ -110,7 +140,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/mentions-legales/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/legal-notice/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/mentions-legales/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/legal-notice/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/en/privacy-policy/</loc>
@@ -120,7 +153,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/politiques-de-confidentialite/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/en/privacy-policy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/politiques-de-confidentialite/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/privacy-policy/"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/sources/etoro-fr</loc>
@@ -130,7 +166,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/sources/etoro-fr"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/sources/etoro-en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/sources/etoro-fr"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/sources/etoro-en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/sources/etoro-en"/>
+</url>
 
   <url>
     <loc>https://avis-invest.com/sources/etoro-en</loc>
@@ -140,7 +179,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://avis-invest.com/sources/etoro-fr"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avis-invest.com/sources/etoro-en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avis-invest.com/sources/etoro-fr"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://avis-invest.com/es/sources/etoro-en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://avis-invest.com/de/sources/etoro-en"/>
+</url>
 </urlset>
 
 

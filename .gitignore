@@ -8,6 +8,9 @@ ahrefs-export/
 *_hreflang_conflicts_on_page_*.csv
 help*_tokens.css
 
+# Local backups
+*.orig.txt
+
 # OS / tooling
 __pycache__/
 .DS_Store
