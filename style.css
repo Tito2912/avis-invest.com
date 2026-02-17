@@ -186,6 +186,7 @@ ul,ol{padding-left:1.2rem}
 .hero-inner{display:grid; gap:1rem; grid-template-columns:1fr}
 .hero-actions{display:flex; gap:.6rem; flex-wrap:wrap; margin:.6rem 0}
 .hero-media{display:none}
+.hero-media img{max-width:520px; margin-inline:auto}
 @media (min-width:880px){
   .hero-inner{grid-template-columns:1.1fr .9fr; align-items:center}
   .hero-media{display:block; justify-self:end}
