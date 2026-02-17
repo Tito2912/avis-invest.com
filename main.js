@@ -106,8 +106,7 @@ const runWhenIdle = (cb, timeout = 800) => {
 
 /* ---------- Affiliate targets (centralized) ---------- */
 const AFFILIATE_TARGETS = {
-  // TODO: replace with your Bitpanda affiliate URL
-  bitpanda: 'https://www.bitpanda.com/'
+  bitpanda: 'https://bitpanda.pxf.io/7XePPV'
 };
 
 function resolveAffiliateTarget(value) {
@@ -130,6 +129,7 @@ function hydrateAffiliateLinks() {
 
     const relTokens = new Set((link.getAttribute('rel') || '').split(/\s+/).filter(Boolean));
     relTokens.add('sponsored');
+    relTokens.add('nofollow');
     relTokens.add('noopener');
     link.setAttribute('rel', Array.from(relTokens).join(' '));
   });
