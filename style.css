@@ -183,6 +183,25 @@ ul,ol{padding-left:1.2rem}
 .lang-switch a.active,
 .lang-switch a[aria-current="true"]{background:#e8fff7; color:#064d39}
 
+/* Header: lien secondaire (avis partenaire) — volontairement non-CTA */
+.header-link{
+  display:inline-flex;
+  align-items:center;
+  padding:.25rem .5rem;
+  border-radius:999px;
+  color:var(--text);
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:4px;
+  text-decoration-thickness:2px;
+  box-shadow:none;
+  opacity:.85;
+}
+.header-link:hover{
+  opacity:1;
+  background:#f0f4f3;
+}
+
 /* ---------------- Hero ---------------- */
 .hero{padding:28px 0 14px;background:linear-gradient(180deg,#f5fbf8 0,#fff 100%)}
 .hero-inner{display:grid; gap:1rem; grid-template-columns:1fr}
