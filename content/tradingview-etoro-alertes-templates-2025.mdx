@@ -1,0 +1,55 @@
+---
+title: "TradingView + eToro : templates d’alertes prêts à cloner"
+description: "Guide 2025 : configurer TradingView pour suivre vos positions eToro. Alertes multi-actifs, templates prêts à cloner, gestion des risques et bonnes pratiques."
+date: "2025-02-15"
+updatedAt: "2026-02-28"
+type: "guide"
+canonical: "/tradingview-etoro-alertes-templates-2025"
+---
+<p class="eyebrow">Mise à jour • Février 2025</p>
+
+<p class="lede">Objectif : ne plus surveiller vos positions eToro en permanence. Nous avons configuré des alertes TradingView compatibles actions, indices, ETF et crypto (selon votre pays). Vous pouvez les cloner, ajuster le risque et recevoir les signaux par app, email ou webhook.</p>
+<section>
+<h2>Pré-requis rapides</h2>
+<ul>
+<li>TradingView plan Pro ou supérieur pour les alertes multiples.</li>
+<li>Horloge synchronisée et fuseau horaire correct pour éviter les alertes hors session.</li>
+<li>Risk management : taille de position calculée avant l’ordre sur eToro (pas dans TradingView).</li>
+</ul>
+</section>
+<section>
+<h2>Templates d’alertes à cloner</h2>
+<ul>
+<li><strong>Breakout + volume</strong> : prix franchit la résistance, volume &gt; 20 % moyenne.</li>
+<li><strong>Pullback propre</strong> : prix touche EMA20 après rupture, pas de bougie pleine contre-tendance.</li>
+<li><strong>Trailing stop</strong> : alerte si prix casse le dernier plus bas 1H (pour resserrer le stop).</li>
+<li><strong>Crypto (si éligible)</strong> : alerte croisement VWAP + RSI &lt; 60 en tendance haussière.</li>
+</ul>
+<p>Nous avons mis en ligne ces modèles avec captures et paramètres détaillés sur <a href="https://tradingview-avis.com/" rel="noopener noreferrer" target="_blank">notre guide TradingView complet</a>. Vous pouvez les dupliquer puis éditer les tickers pour vos listes.</p>
+</section>
+<section>
+<h2>Bonnes pratiques eToro</h2>
+<ul>
+<li>Limiter les alertes sur les actifs réellement disponibles dans votre région (actions/ETF, crypto si autorisée).</li>
+<li>Éviter l’effet de levier sur CFD si vous débutez ; préférer l’achat au comptant.</li>
+<li>Renseigner une zone de prise de bénéfices et un stop technique avant d’envoyer l’ordre sur eToro.</li>
+</ul>
+</section>
+<section>
+<h2>Checklist de mise en place</h2>
+<ol>
+<li>Créer une watchlist « eToro » dans TradingView.</li>
+<li>Appliquer le template « Breakout + volume » sur vos actifs clés.</li>
+<li>Planifier une revue hebdo : nettoyer les alertes expirées, ajuster les niveaux.</li>
+<li>Sur eToro, utiliser la taille fractionnée (actions) ou min. crypto si dispo ; ne pas surdimensionner.</li>
+</ol>
+</section>
+<section>
+<h2>FAQ rapide</h2>
+<ul>
+<li><strong>Les alertes exécutent-elles les ordres ?</strong> Non, elles notifient seulement. Vous placez l’ordre sur eToro.</li>
+<li><strong>Faut-il un plan payant TradingView ?</strong> Oui pour plusieurs alertes simultanées.</li>
+<li><strong>Crypto indisponible sur eToro chez moi ?</strong> Désactivez les modèles crypto et restez sur actions/ETF.</li>
+</ul>
+</section>
+<p class="disclaimer">Le copytrading ou l’investissement en cryptoactifs est hautement volatil et non régulé dans certains pays de l’UE. Aucune protection consommateur. Des taxes sur les bénéfices peuvent s’appliquer. Performances passées non indicatives des résultats futurs.</p>

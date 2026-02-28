@@ -1,0 +1,118 @@
+# Canonical host + HTTPS
+http://avis-invest.com/* https://avis-invest.com/:splat 301!
+http://www.avis-invest.com/* https://avis-invest.com/:splat 301!
+https://www.avis-invest.com/* https://avis-invest.com/:splat 301!
+
+# Old pretty URLs (.html) -> canonical URLs
+/index.html / 301!
+/index / 301!
+/blog.html /blog 301!
+/guide-etoro.html /guide-etoro 301!
+/bitpanda.html /bitpanda 301!
+/mentions-legales.html /mentions-legales 301!
+/politiques-de-confidentialite.html /politiques-de-confidentialite 301!
+/etoro-fonctionnement-frais-regulations-2025.html /etoro-fonctionnement-frais-regulations-2025 301!
+/tradingview-etoro-alertes-templates-2025.html /tradingview-etoro-alertes-templates-2025 301!
+
+# Locale .html -> canonical locale URLs
+/en.html /en 301!
+/en/index.html /en 301!
+/en/blog.html /en/blog 301!
+/en/guide-etoro.html /en/guide-etoro 301!
+/en/bitpanda.html /en/bitpanda 301!
+/en/legal-notice.html /en/legal-notice 301!
+/en/privacy-policy.html /en/privacy-policy 301!
+
+/es.html /es 301!
+/es/index.html /es 301!
+/es/blog.html /es/blog 301!
+/es/guide-etoro.html /es/guide-etoro 301!
+/es/bitpanda.html /es/bitpanda 301!
+/es/legal-notice.html /es/legal-notice 301!
+/es/privacy-policy.html /es/privacy-policy 301!
+
+/de.html /de 301!
+/de/index.html /de 301!
+/de/blog.html /de/blog 301!
+/de/guide-etoro.html /de/guide-etoro 301!
+/de/bitpanda.html /de/bitpanda 301!
+/de/legal-notice.html /de/legal-notice 301!
+/de/privacy-policy.html /de/privacy-policy 301!
+
+# Sources: keep clean canonical URLs without extension
+/sources/etoro-fr.html /sources/etoro-fr 301!
+/sources/etoro-fr/ /sources/etoro-fr 301!
+/sources/etoro-fr /sources/etoro-fr.html 200
+/sources/etoro-en.html /sources/etoro-en 301!
+/sources/etoro-en/ /sources/etoro-en 301!
+/sources/etoro-en /sources/etoro-en.html 200
+
+# Old blog numeric slugs -> canonical article URLs
+/blog-1 /etoro-fonctionnement-frais-regulations-2025 301!
+/blog-1.html /etoro-fonctionnement-frais-regulations-2025 301!
+/blog-1/ /etoro-fonctionnement-frais-regulations-2025 301!
+/blog-1/index.html /etoro-fonctionnement-frais-regulations-2025 301!
+/blog-2 /tradingview-etoro-alertes-templates-2025 301!
+/blog-2.html /tradingview-etoro-alertes-templates-2025 301!
+/blog-2/ /tradingview-etoro-alertes-templates-2025 301!
+/blog-2/index.html /tradingview-etoro-alertes-templates-2025 301!
+
+# Locale: old numeric slugs -> canonical localized blog URLs
+/en/blog-1 /en/blog/etoro-guide-2025-fees-regulation 301!
+/en/blog-1.html /en/blog/etoro-guide-2025-fees-regulation 301!
+/en/blog-1/ /en/blog/etoro-guide-2025-fees-regulation 301!
+/en/blog-1/index.html /en/blog/etoro-guide-2025-fees-regulation 301!
+/en/blog-2 /en/blog/tradingview-etoro-alert-templates-2025 301!
+/en/blog-2.html /en/blog/tradingview-etoro-alert-templates-2025 301!
+/en/blog-2/ /en/blog/tradingview-etoro-alert-templates-2025 301!
+/en/blog-2/index.html /en/blog/tradingview-etoro-alert-templates-2025 301!
+
+/es/blog-1 /es/blog/etoro-guia-2025-tarifas-regulacion 301!
+/es/blog-1.html /es/blog/etoro-guia-2025-tarifas-regulacion 301!
+/es/blog-1/ /es/blog/etoro-guia-2025-tarifas-regulacion 301!
+/es/blog-1/index.html /es/blog/etoro-guia-2025-tarifas-regulacion 301!
+/es/blog-2 /es/blog/tradingview-etoro-alertas-plantillas-2025 301!
+/es/blog-2.html /es/blog/tradingview-etoro-alertas-plantillas-2025 301!
+/es/blog-2/ /es/blog/tradingview-etoro-alertas-plantillas-2025 301!
+/es/blog-2/index.html /es/blog/tradingview-etoro-alertas-plantillas-2025 301!
+
+/de/blog-1 /de/blog/etoro-guide-2025-gebuehren-regulierung 301!
+/de/blog-1.html /de/blog/etoro-guide-2025-gebuehren-regulierung 301!
+/de/blog-1/ /de/blog/etoro-guide-2025-gebuehren-regulierung 301!
+/de/blog-1/index.html /de/blog/etoro-guide-2025-gebuehren-regulierung 301!
+/de/blog-2 /de/blog/tradingview-etoro-alert-vorlagen-2025 301!
+/de/blog-2.html /de/blog/tradingview-etoro-alert-vorlagen-2025 301!
+/de/blog-2/ /de/blog/tradingview-etoro-alert-vorlagen-2025 301!
+/de/blog-2/index.html /de/blog/tradingview-etoro-alert-vorlagen-2025 301!
+
+# Next export: serve pages for pretty URLs (avoid folder vs .html issues on static hosts)
+/blog /blog.html 200
+/blog/ /blog.html 200
+/guide-etoro /guide-etoro.html 200
+/guide-etoro/ /guide-etoro.html 200
+/bitpanda /bitpanda.html 200
+/bitpanda/ /bitpanda.html 200
+/mentions-legales /mentions-legales.html 200
+/mentions-legales/ /mentions-legales.html 200
+/politiques-de-confidentialite /politiques-de-confidentialite.html 200
+/politiques-de-confidentialite/ /politiques-de-confidentialite.html 200
+/etoro-fonctionnement-frais-regulations-2025 /etoro-fonctionnement-frais-regulations-2025.html 200
+/etoro-fonctionnement-frais-regulations-2025/ /etoro-fonctionnement-frais-regulations-2025.html 200
+/tradingview-etoro-alertes-templates-2025 /tradingview-etoro-alertes-templates-2025.html 200
+/tradingview-etoro-alertes-templates-2025/ /tradingview-etoro-alertes-templates-2025.html 200
+
+# Locales (Next export): serve pages for pretty URLs
+/en /en.html 200
+/en/ /en.html 200
+/en/*/ /en/:splat.html 200
+/en/* /en/:splat.html 200
+
+/es /es.html 200
+/es/ /es.html 200
+/es/*/ /es/:splat.html 200
+/es/* /es/:splat.html 200
+
+/de /de.html 200
+/de/ /de.html 200
+/de/*/ /de/:splat.html 200
+/de/* /de/:splat.html 200
