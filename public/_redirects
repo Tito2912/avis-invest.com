@@ -14,6 +14,13 @@ https://www.avis-invest.com/* https://avis-invest.com/:splat 301!
 /etoro-fonctionnement-frais-regulations-2025.html /etoro-fonctionnement-frais-regulations-2025 301!
 /tradingview-etoro-alertes-templates-2025.html /tradingview-etoro-alertes-templates-2025 301!
 
+# Legacy folder index.html -> canonical URLs
+/blog/index.html /blog 301!
+/guide-etoro/index.html /guide-etoro 301!
+/bitpanda/index.html /bitpanda 301!
+/mentions-legales/index.html /mentions-legales 301!
+/politiques-de-confidentialite/index.html /politiques-de-confidentialite 301!
+
 # Locale .html -> canonical locale URLs
 /en.html /en 301!
 /en/index.html /en 301!
@@ -23,6 +30,12 @@ https://www.avis-invest.com/* https://avis-invest.com/:splat 301!
 /en/legal-notice.html /en/legal-notice 301!
 /en/privacy-policy.html /en/privacy-policy 301!
 
+/en/blog/index.html /en/blog 301!
+/en/guide-etoro/index.html /en/guide-etoro 301!
+/en/bitpanda/index.html /en/bitpanda 301!
+/en/legal-notice/index.html /en/legal-notice 301!
+/en/privacy-policy/index.html /en/privacy-policy 301!
+
 /es.html /es 301!
 /es/index.html /es 301!
 /es/blog.html /es/blog 301!
@@ -31,6 +44,12 @@ https://www.avis-invest.com/* https://avis-invest.com/:splat 301!
 /es/legal-notice.html /es/legal-notice 301!
 /es/privacy-policy.html /es/privacy-policy 301!
 
+/es/blog/index.html /es/blog 301!
+/es/guide-etoro/index.html /es/guide-etoro 301!
+/es/bitpanda/index.html /es/bitpanda 301!
+/es/legal-notice/index.html /es/legal-notice 301!
+/es/privacy-policy/index.html /es/privacy-policy 301!
+
 /de.html /de 301!
 /de/index.html /de 301!
 /de/blog.html /de/blog 301!
@@ -38,6 +57,12 @@ https://www.avis-invest.com/* https://avis-invest.com/:splat 301!
 /de/bitpanda.html /de/bitpanda 301!
 /de/legal-notice.html /de/legal-notice 301!
 /de/privacy-policy.html /de/privacy-policy 301!
+
+/de/blog/index.html /de/blog 301!
+/de/guide-etoro/index.html /de/guide-etoro 301!
+/de/bitpanda/index.html /de/bitpanda 301!
+/de/legal-notice/index.html /de/legal-notice 301!
+/de/privacy-policy/index.html /de/privacy-policy 301!
 
 # Sources: keep clean canonical URLs without extension
 /sources/etoro-fr.html /sources/etoro-fr 301!
