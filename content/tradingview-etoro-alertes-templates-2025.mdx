@@ -1,55 +1,81 @@
 ---
-title: "TradingView + eToro : templates d’alertes prêts à cloner"
-description: "Guide 2025 : configurer TradingView pour suivre vos positions eToro. Alertes multi-actifs, templates prêts à cloner, gestion des risques et bonnes pratiques."
+title: "TradingView + eToro : templates d’alertes prêts à l’emploi"
+description: "Guide 2026 : suivre vos positions eToro avec des alertes TradingView, modèles de breakout/pullback, bonnes pratiques et limites à connaître."
 date: "2025-02-15"
-updatedAt: "2026-02-28"
+updatedAt: "2026-03-17"
 type: "guide"
 canonical: "/tradingview-etoro-alertes-templates-2025"
+translationKey: "tradingview-etoro-alerts-2025"
+primaryKeyword: "alertes TradingView eToro"
+jumpLinks:
+  - href: "#prerequis"
+    label: "Pré-requis"
+  - href: "#templates"
+    label: "Templates"
+  - href: "#bonnes-pratiques"
+    label: "Bonnes pratiques"
+  - href: "#checklist"
+    label: "Checklist"
+quickAnswer:
+  - "TradingView permet surtout de surveiller votre watchlist eToro ; l’exécution de l’ordre reste côté eToro."
+  - "Si vous avez besoin de nombreuses alertes en parallèle, la page de prix TradingView affiche actuellement 20 alertes sur Essential, 100 sur Plus, 400 sur Premium et 1 000 sur Ultimate."
+  - "Les alertes webhook sont utiles pour un workflow avancé, mais TradingView demande d’activer la double authentification avant de les utiliser."
+faq:
+  - q: "Les alertes exécutent-elles automatiquement les ordres sur eToro ?"
+    a: "Non. Une alerte TradingView notifie un scénario ; l’ordre est ensuite saisi sur eToro, sauf si vous branchez un système externe."
+  - q: "Faut-il un abonnement payant TradingView ?"
+    a: "Tout dépend du nombre d’alertes actives dont vous avez besoin. Les plans payants offrent davantage de capacité que l’offre gratuite."
+  - q: "Puis-je utiliser des webhooks avec TradingView ?"
+    a: "Oui, mais TradingView précise qu’il faut activer l’authentification à deux facteurs avant de créer une alerte webhook."
+internalLinks:
+  - href: "/guide-etoro"
+    anchor: "Avis eToro : investir plus simplement (page pilier)"
+  - href: "/etoro-fonctionnement-frais-regulations-2025"
+    anchor: "Guide eToro 2025 : fonctionnement, frais, régulation"
 ---
-<p class="eyebrow">Mise à jour • Février 2025</p>
+<p class="eyebrow">Mise à jour • 17 mars 2026</p>
 
-<p class="lede">Objectif : ne plus surveiller vos positions eToro en permanence. Nous avons configuré des alertes TradingView compatibles actions, indices, ETF et crypto (selon votre pays). Vous pouvez les cloner, ajuster le risque et recevoir les signaux par app, email ou webhook.</p>
-<section>
+<p class="lede">Objectif : ne plus surveiller vos positions eToro en continu. Ces alertes TradingView servent à suivre des actions, indices, ETF et crypto-actifs quand ils sont disponibles dans votre juridiction. Elles aident à cadrer la veille, pas à supprimer le jugement humain.</p>
+
+<section id="prerequis">
 <h2>Pré-requis rapides</h2>
 <ul>
-<li>TradingView plan Pro ou supérieur pour les alertes multiples.</li>
-<li>Horloge synchronisée et fuseau horaire correct pour éviter les alertes hors session.</li>
-<li>Risk management : taille de position calculée avant l’ordre sur eToro (pas dans TradingView).</li>
+<li><strong>Le bon plan TradingView :</strong> si vous gérez plusieurs scénarios à la fois, la page de prix liste actuellement 20 alertes sur Essential, 100 sur Plus, 400 sur Premium et 1 000 sur Ultimate.</li>
+<li><strong>Un fuseau horaire cohérent :</strong> vérifiez l’heure de marché de l’actif pour éviter des déclenchements hors session.</li>
+<li><strong>2FA activée si vous utilisez les webhooks :</strong> TradingView l’exige avant la création d’alertes webhook.</li>
+<li><strong>Un plan de risque déjà défini :</strong> taille de position, zone de sortie et invalidation doivent être décidées avant l’ordre sur eToro.</li>
 </ul>
 </section>
-<section>
+
+<section id="templates">
 <h2>Templates d’alertes à cloner</h2>
 <ul>
-<li><strong>Breakout + volume</strong> : prix franchit la résistance, volume &gt; 20 % moyenne.</li>
-<li><strong>Pullback propre</strong> : prix touche EMA20 après rupture, pas de bougie pleine contre-tendance.</li>
-<li><strong>Trailing stop</strong> : alerte si prix casse le dernier plus bas 1H (pour resserrer le stop).</li>
-<li><strong>Crypto (si éligible)</strong> : alerte croisement VWAP + RSI &lt; 60 en tendance haussière.</li>
+<li><strong>Breakout + volume :</strong> alerte quand le prix casse une résistance et que le volume dépasse de 20&nbsp;% sa moyenne récente.</li>
+<li><strong>Pullback propre :</strong> après une rupture, surveillez le retour sur EMA20 ou une petite zone de consolidation avant un nouveau signal.</li>
+<li><strong>Trailing stop défensif :</strong> créez une alerte sur la cassure du dernier plus bas 1H pour réévaluer le stop.</li>
+<li><strong>Crypto avec filtre :</strong> si l’actif est disponible sur eToro, combinez croisement VWAP et RSI encore haussier.</li>
 </ul>
-<p>Nous avons mis en ligne ces modèles avec captures et paramètres détaillés sur <a href="https://tradingview-avis.com/" rel="noopener noreferrer" target="_blank">notre guide TradingView complet</a>. Vous pouvez les dupliquer puis éditer les tickers pour vos listes.</p>
+<p>Nous détaillons d’autres variantes et captures d’écran dans <a href="https://tradingview-avis.com/" rel="noopener noreferrer" target="_blank">notre guide TradingView complet</a>. Le plus important reste d’adapter les paramètres au marché surveillé.</p>
 </section>
-<section>
-<h2>Bonnes pratiques eToro</h2>
+
+<section id="bonnes-pratiques">
+<h2>Bonnes pratiques avec eToro</h2>
 <ul>
-<li>Limiter les alertes sur les actifs réellement disponibles dans votre région (actions/ETF, crypto si autorisée).</li>
-<li>Éviter l’effet de levier sur CFD si vous débutez ; préférer l’achat au comptant.</li>
-<li>Renseigner une zone de prise de bénéfices et un stop technique avant d’envoyer l’ordre sur eToro.</li>
+<li>Ne créez des alertes que sur les actifs réellement disponibles dans votre pays et sur votre type de compte.</li>
+<li>Si vous débutez, évitez d’utiliser ces signaux pour pousser des entrées CFD à effet de levier.</li>
+<li>Avant chaque ordre, revalidez spread, volatilité, zone d’invalidation et taille de position.</li>
+<li>Une alerte n’est pas un ordre : elle ouvre une revue, pas une exécution automatique.</li>
 </ul>
 </section>
-<section>
+
+<section id="checklist">
 <h2>Checklist de mise en place</h2>
 <ol>
-<li>Créer une watchlist « eToro » dans TradingView.</li>
-<li>Appliquer le template « Breakout + volume » sur vos actifs clés.</li>
-<li>Planifier une revue hebdo : nettoyer les alertes expirées, ajuster les niveaux.</li>
-<li>Sur eToro, utiliser la taille fractionnée (actions) ou min. crypto si dispo ; ne pas surdimensionner.</li>
+<li>Créez une watchlist “eToro” pour vos actifs prioritaires.</li>
+<li>Dupliquez une template breakout et une template pullback sur les marchés suivis chaque semaine.</li>
+<li>Ajoutez un message d’alerte explicite : actif, niveau, direction, action à vérifier.</li>
+<li>Faites une revue hebdomadaire pour supprimer les alertes expirées et ajuster les niveaux.</li>
 </ol>
 </section>
-<section>
-<h2>FAQ rapide</h2>
-<ul>
-<li><strong>Les alertes exécutent-elles les ordres ?</strong> Non, elles notifient seulement. Vous placez l’ordre sur eToro.</li>
-<li><strong>Faut-il un plan payant TradingView ?</strong> Oui pour plusieurs alertes simultanées.</li>
-<li><strong>Crypto indisponible sur eToro chez moi ?</strong> Désactivez les modèles crypto et restez sur actions/ETF.</li>
-</ul>
-</section>
-<p class="disclaimer">Le copytrading ou l’investissement en cryptoactifs est hautement volatil et non régulé dans certains pays de l’UE. Aucune protection consommateur. Des taxes sur les bénéfices peuvent s’appliquer. Performances passées non indicatives des résultats futurs.</p>
+
+<p class="disclaimer">Investir comporte des risques. Les CFD sont des instruments complexes et le copy trading ou les crypto-actifs peuvent entraîner des pertes rapides. Ce contenu est informatif et ne constitue pas une recommandation personnalisée.</p>

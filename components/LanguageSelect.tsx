@@ -25,6 +25,30 @@ const ROUTES: Array<Record<Lang, string>> = [
     de: '/de/privacy-policy',
   },
   {
+    fr: '/a-propos',
+    en: '/en/about',
+    es: '/es/about',
+    de: '/de/about',
+  },
+  {
+    fr: '/methodologie',
+    en: '/en/methodology',
+    es: '/es/methodology',
+    de: '/de/methodology',
+  },
+  {
+    fr: '/sources',
+    en: '/en/sources',
+    es: '/es/sources',
+    de: '/de/sources',
+  },
+  {
+    fr: '/contact',
+    en: '/en/contact',
+    es: '/es/contact',
+    de: '/de/contact',
+  },
+  {
     fr: '/etoro-fonctionnement-frais-regulations-2025',
     en: '/en/blog/etoro-guide-2025-fees-regulation',
     es: '/es/blog/etoro-guia-2025-tarifas-regulacion',

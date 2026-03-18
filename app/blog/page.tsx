@@ -1,7 +1,28 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { getAllPosts } from '@/lib/content';
+import { buildAlternatesForBlogIndex, getOgImage } from '@/lib/seo';
 
 export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Guides, comparatifs et avis pour débuter et progresser.',
+  alternates: buildAlternatesForBlogIndex('fr'),
+  openGraph: {
+    type: 'website',
+    title: 'Blog',
+    description: 'Guides, comparatifs et avis pour débuter et progresser.',
+    url: '/blog',
+    images: [{ url: getOgImage('fr') }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog',
+    description: 'Guides, comparatifs et avis pour débuter et progresser.',
+    images: [getOgImage('fr')],
+  },
+};
 
 export default async function BlogPage() {
   const posts = await getAllPosts();
@@ -27,4 +48,3 @@ export default async function BlogPage() {
     </div>
   );
 }
-

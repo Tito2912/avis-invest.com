@@ -1,56 +1,81 @@
 ---
-title: "TradingView + eToro: Alarmvorlagen, die Sie klonen können"
-description: "2025 Anleitung: Erstellen Sie TradingView-Benachrichtigungen, um Ihre eToro-Positionen zu verfolgen. Ready-to-clone-Vorlagen, Risikospitzen und Best Practices."
+title: "TradingView + eToro: Alert-Vorlagen, die sich wirklich nutzen lassen"
+description: "Leitfaden 2026: eToro-Positionen mit TradingView-Alerts überwachen, Breakout- und Pullback-Setups klonen und Risiken sauber steuern."
 date: "2025-02-15"
-updatedAt: "2026-02-28"
+updatedAt: "2026-03-17"
 type: "guide"
 canonical: "/de/blog/tradingview-etoro-alert-vorlagen-2025"
+translationKey: "tradingview-etoro-alerts-2025"
+primaryKeyword: "TradingView eToro Alerts"
+jumpLinks:
+  - href: "#voraussetzungen"
+    label: "Voraussetzungen"
+  - href: "#vorlagen"
+    label: "Vorlagen"
+  - href: "#praxis"
+    label: "Best Practices"
+  - href: "#checkliste"
+    label: "Checkliste"
+quickAnswer:
+  - "TradingView-Alerts helfen beim Überwachen einer eToro-Watchlist; die Order wird weiterhin auf eToro ausgeführt."
+  - "Wenn du viele laufende Alerts brauchst, nennt die TradingView-Preisseite aktuell 20 Alerts für Essential, 100 für Plus, 400 für Premium und 1.000 für Ultimate."
+  - "Webhook-Alerts sind nur für fortgeschrittene Workflows sinnvoll, und TradingView verlangt dafür aktivierte Zwei-Faktor-Authentifizierung."
+faq:
+  - q: "Führen TradingView-Alerts automatisch Trades auf eToro aus?"
+    a: "Nein. Alerts benachrichtigen nur per App, E-Mail, SMS oder Webhook. Die Order wird weiterhin auf eToro platziert, es sei denn, du verbindest eine externe Automatisierung."
+  - q: "Brauche ich einen bezahlten TradingView-Plan?"
+    a: "Das hängt von der Zahl gleichzeitig aktiver Alerts ab. Die bezahlten Pläne bieten deutlich mehr Alert-Kapazität als die kostenlose Version."
+  - q: "Kann ich Webhooks mit TradingView nutzen?"
+    a: "Ja, aber TradingView weist darauf hin, dass du vorher die Zwei-Faktor-Authentifizierung aktivieren musst."
+internalLinks:
+  - href: "/de/guide-etoro"
+    anchor: "eToro Erfahrungen: Pillar Page (CopyTrading, Gebühren, Sicherheit)"
+  - href: "/de/blog/etoro-guide-2025-gebuehren-regulierung"
+    anchor: "eToro Guide 2025: Gebühren und Regulierung"
 ---
-<p class="eyebrow">Update • Feb 2025</p>
+<p class="eyebrow">Update • 17. März 2026</p>
 
-<p class="lede">Ziel: Stoppen Sie auf dem Bildschirm zu starren. Wir konfigurierten TradingView-Benachrichtigungen, die mit Ihrer eToro Watchlist arbeiten (Stocks, Indizes, ETFs, Krypto, wo erlaubt).</p>
-<section>
+<p class="lede">Ziel: eToro-Positionen nicht mehr permanent manuell überwachen. Diese TradingView-Alerts helfen dir dabei, Aktien, Indizes, ETFs und – wenn verfügbar – Krypto-Assets sauber zu beobachten. Sie verbessern den Prozess, ersetzen aber nicht die eigene Prüfung vor einer Order.</p>
+
+<section id="voraussetzungen">
 <h2>Schnelle Voraussetzungen</h2>
 <ul>
-<li>TradingView Pro oder höher für mehrere gleichzeitige Warnungen.</li>
-<li>Korrekte Zeitzone, um off-session-Trigger zu vermeiden.</li>
-<li>Risikoskalierung erfolgt vor dem Senden der eToro-Ordnung.</li>
+<li><strong>Der passende TradingView-Plan:</strong> wenn du mehrere Setups parallel verfolgst, nennt die Preisseite derzeit 20 Alerts für Essential, 100 für Plus, 400 für Premium und 1.000 für Ultimate.</li>
+<li><strong>Korrekte Sitzungszeiten:</strong> prüfe Handelszeiten und Zeitzone des Marktes, damit Alerts nicht außerhalb der Session auslösen.</li>
+<li><strong>2FA für Webhooks:</strong> TradingView verlangt aktivierte Zwei-Faktor-Authentifizierung, bevor Webhook-Alerts erstellt werden können.</li>
+<li><strong>Risiko vorher festlegen:</strong> Positionsgröße, Invalidationsniveau und Exit-Plan sollten vor dem Orderticket auf eToro feststehen.</li>
 </ul>
 </section>
-<section>
-<h2>Alarmvorlagen zu Klon</h2>
+
+<section id="vorlagen">
+<h2>Alert-Vorlagen zum Klonen</h2>
 <ul>
-<li><strong>Bruch + Volumen</strong>: Preis bricht Widerstand, Volumen &gt; 20 % über dem Durchschnitt.</li>
-<li><strong>Zurück zur Übersicht</strong>: Preis Armaturen EMA20 nach Ausbruch, keine volle Gegenkerze.</li>
-<li><strong>Trailing-Stopp</strong>: Alarm, wenn der Preis Pausen dauern 1H niedrig zu straffen Stops.</li>
-<li><strong>Crypto (falls verfügbar)</strong>: VWAP cross + RSI &lt; 60 in uptrend.</li>
+<li><strong>Breakout + Volumen:</strong> Alert, wenn der Kurs einen Widerstand bricht und das Volumen mindestens 20&nbsp;% über dem jüngsten Durchschnitt liegt.</li>
+<li><strong>Sauberer Pullback:</strong> nach dem Ausbruch beobachtest du den Rücklauf an EMA20 oder eine kurze Konsolidierungszone.</li>
+<li><strong>Defensiver Trailing-Stop:</strong> Alert, wenn der Kurs das letzte 1H-Tief unterschreitet, damit du den Stop neu bewertest.</li>
+<li><strong>Krypto mit Filter:</strong> wenn der Wert bei eToro handelbar ist, kombiniere VWAP-Kreuz und RSI, der den Aufwärtstrend noch stützt.</li>
 </ul>
-<p>Wir veröffentlichten diese Modelle mit Screenshots und Parametern auf <a href="https://tradingview-avis.com/" rel="noopener noreferrer" target="_blank">unser vollständiger TradingView Guide</a>. Duplizieren und Swap-Tickers für Ihre Liste.</p>
+<p>Weitere Beispiele und Screenshots zeigen wir in <a href="https://tradingview-avis.com/" rel="noopener noreferrer" target="_blank">unserem vollständigen TradingView-Guide</a>. Entscheidend ist weniger die Vorlage als die saubere Anpassung an deinen Markt.</p>
 </section>
-<section>
-<h2>Gute Praktiken für eToro</h2>
+
+<section id="praxis">
+<h2>Best Practices mit eToro</h2>
 <ul>
-<li>Nur Alarm auf Vermögenswerte, die in Ihrer Region verfügbar sind (Lager/ETFs, Krypto, falls erlaubt).</li>
-<li>Vermeiden Sie Hebelwirkung auf CFDs, wenn Sie neu sind; bevorzugen Sie unbezahlte Positionen.</li>
-<li>Setzen Sie die Gewinnzone und einen technischen Stopp, bevor Sie die eToro-Ordnung.</li>
+<li>Lege Alerts nur auf Instrumente, die in deinem Konto und in deinem Land tatsächlich verfügbar sind.</li>
+<li>Wenn du neu bist, nutze Alerts nicht als Vorwand für gehebelte CFD-Trades, die du nicht vollständig verstehst.</li>
+<li>Prüfe vor jeder Order Spread, Volatilität, Invalidationsniveau und Positionsgröße erneut.</li>
+<li>Ein Alert ist ein Prüfimpuls, keine automatische Handelsentscheidung.</li>
 </ul>
 </section>
-<section>
-<h2>Checkliste Setup</h2>
+
+<section id="checkliste">
+<h2>Setup-Checkliste</h2>
 <ol>
-<li>Erstellen Sie eine “eToro” Watchlist in TradingView.</li>
-<li>Bewerben Sie die Vorlage „Breakout + Volume“ auf Ihre Schlüsselsymbole.</li>
-<li>Wöchentliche Überprüfung: saubere abgelaufene Alarme, Einstellung Niveaus.</li>
-<li>Auf eToro, verwenden Sie fraktionierte Leimung (Stocks) oder minimale Krypto, wo erlaubt; vermeiden Sie Übermaßung.</li>
+<li>Erstelle eine Watchlist „eToro“ für deine wichtigsten Werte.</li>
+<li>Dupliziere je eine Breakout- und Pullback-Vorlage für die Märkte, die du wöchentlich verfolgst.</li>
+<li>Formuliere klare Alert-Nachrichten mit Wert, Niveau, Richtung und nächstem Prüfpunkt.</li>
+<li>Bereinige wöchentlich abgelaufene Alerts und passe veraltete Level an.</li>
 </ol>
 </section>
-<section>
-<h2>FAQ</h2>
-<ul>
-<li><strong>Machen Alarme Trades aus?</strong> Nein, sie benachrichtigen nur die Bestellung auf eToro.</li>
-<li><strong>Brauche ich einen bezahlten TradingView-Plan?</strong> Ja, um mehrere Alarme live zu halten.</li>
-<li><strong>Crypto auf meinem eToro nicht verfügbar?</strong> Crypto-Vorlagen deaktivieren; auf Lager/ETFs aufkleben.</li>
-</ul>
-</section>
-<p class="disclaimer">Copytrading oder Krypto-Investing ist in einigen EU-Ländern sehr volatile und unreguliert. Kein Verbraucherschutz. Gewinne können geltend gemacht werden. Frühere Leistungen garantieren keine zukünftigen Ergebnisse.</p>
 
+<p class="disclaimer">Investieren ist mit Risiken verbunden. CFDs sind komplexe Instrumente, und Copy Trading oder Krypto-Exposure können zu schnellen Verlusten führen. Diese Seite ist rein informativ und keine individuelle Anlageberatung.</p>

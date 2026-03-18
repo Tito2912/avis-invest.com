@@ -1,56 +1,81 @@
 ---
-title: "TradingView + eToro: alert templates you can clone"
-description: "2025 guide: set up TradingView alerts to track your eToro positions. Ready-to-clone templates, risk tips, and best practices."
+title: "TradingView + eToro: alert templates you can actually use"
+description: "2026 guide: monitor eToro positions with TradingView alerts, cloneable breakout and pullback setups, and practical risk rules."
 date: "2025-02-15"
-updatedAt: "2026-02-28"
+updatedAt: "2026-03-17"
 type: "guide"
 canonical: "/en/blog/tradingview-etoro-alert-templates-2025"
+translationKey: "tradingview-etoro-alerts-2025"
+primaryKeyword: "TradingView eToro alerts"
+jumpLinks:
+  - href: "#prerequisites"
+    label: "Prerequisites"
+  - href: "#templates"
+    label: "Templates"
+  - href: "#best-practices"
+    label: "Best practices"
+  - href: "#checklist"
+    label: "Checklist"
+quickAnswer:
+  - "TradingView alerts help you monitor your eToro watchlist; orders are still placed on eToro."
+  - "If you need many live alerts, TradingView's pricing page currently lists 20 alerts on Essential, 100 on Plus, 400 on Premium, and 1,000 on Ultimate."
+  - "Webhook alerts are useful for advanced setups, but TradingView requires two-factor authentication before you can create them."
+faq:
+  - q: "Do TradingView alerts execute trades on eToro?"
+    a: "No. Alerts only notify you by app, email, SMS, or webhook. The trade is still placed on eToro unless you connect an outside automation stack."
+  - q: "Do I need a paid TradingView plan?"
+    a: "That depends on how many alerts you need active at the same time. Paid plans offer far more alert capacity than the free tier."
+  - q: "Can I use webhooks with TradingView?"
+    a: "Yes, but TradingView states that you must enable two-factor authentication before creating webhook alerts."
+internalLinks:
+  - href: "/en/guide-etoro"
+    anchor: "eToro review: pillar page (CopyTrading, fees, safety)"
+  - href: "/en/blog/etoro-guide-2025-fees-regulation"
+    anchor: "eToro guide 2025: how it works, fees, regulation"
 ---
-<p class="eyebrow">Update • Feb 2025</p>
+<p class="eyebrow">Update • March 17, 2026</p>
 
-<p class="lede">Goal: stop staring at the screen. We configured TradingView alerts that work with your eToro watchlist (stocks, indices, ETFs, crypto where allowed). Clone them, adjust risk, and get signals via app, email, or webhook.</p>
-<section>
+<p class="lede">Goal: stop staring at your eToro positions all day. These TradingView alerts help you monitor stocks, indices, ETFs, and cryptoassets when they are available in your region. They improve discipline, but they do not remove the need to review a setup before acting.</p>
+
+<section id="prerequisites">
 <h2>Quick prerequisites</h2>
 <ul>
-<li>TradingView Pro or above for multiple simultaneous alerts.</li>
-<li>Correct timezone to avoid off-session triggers.</li>
-<li>Risk sizing done before sending the eToro order.</li>
+<li><strong>The right TradingView plan:</strong> if you run several live scenarios, the pricing page currently lists 20 alerts on Essential, 100 on Plus, 400 on Premium, and 1,000 on Ultimate.</li>
+<li><strong>Correct session settings:</strong> confirm the asset's market hours and timezone so you do not trigger alerts off-session.</li>
+<li><strong>2FA for webhooks:</strong> TradingView requires two-factor authentication before webhook alerts can be created.</li>
+<li><strong>Defined risk first:</strong> position size, invalidation, and exit logic should be decided before you send an order to eToro.</li>
 </ul>
 </section>
-<section>
+
+<section id="templates">
 <h2>Alert templates to clone</h2>
 <ul>
-<li><strong>Breakout + volume</strong>: price breaks resistance, volume &gt; 20% above average.</li>
-<li><strong>Clean pullback</strong>: price taps EMA20 after breakout, no full counter candle.</li>
-<li><strong>Trailing stop</strong>: alert when price breaks last 1H low to tighten stops.</li>
-<li><strong>Crypto (if available)</strong>: VWAP cross + RSI &lt; 60 in uptrend.</li>
+<li><strong>Breakout + volume:</strong> alert when price breaks resistance and volume is at least 20% above its recent average.</li>
+<li><strong>Clean pullback:</strong> after a breakout, wait for price to revisit EMA20 or a short consolidation zone before re-evaluating entry.</li>
+<li><strong>Defensive trailing stop:</strong> trigger an alert when price breaks the latest 1H low so you can reassess stop placement.</li>
+<li><strong>Filtered crypto setup:</strong> when the asset is available on eToro, combine a VWAP cross with an RSI that still supports the uptrend.</li>
 </ul>
-<p>We published these models with screenshots and parameters on <a href="https://tradingview-avis.com/" rel="noopener noreferrer" target="_blank">our full TradingView guide</a>. Duplicate and swap tickers for your list.</p>
+<p>We cover more examples and screenshots in <a href="https://tradingview-avis.com/" rel="noopener noreferrer" target="_blank">our full TradingView guide</a>. The template matters less than the discipline around how you adapt it.</p>
 </section>
-<section>
-<h2>Good practices for eToro</h2>
+
+<section id="best-practices">
+<h2>Best practices with eToro</h2>
 <ul>
-<li>Only alert on assets available in your region (stocks/ETFs, crypto if allowed).</li>
-<li>Avoid leverage on CFDs if you’re new; prefer unleveraged positions.</li>
-<li>Set profit zone and a technical stop before placing the eToro order.</li>
+<li>Only create alerts on instruments that are actually available in your account and region.</li>
+<li>If you are new, do not let alerts push you into leveraged CFD trades you do not fully understand.</li>
+<li>Re-check spread, volatility, invalidation level, and position size before every order.</li>
+<li>An alert is a review trigger, not a fully automated trading decision.</li>
 </ul>
 </section>
-<section>
+
+<section id="checklist">
 <h2>Setup checklist</h2>
 <ol>
-<li>Create an “eToro” watchlist in TradingView.</li>
-<li>Apply the “Breakout + volume” template to your key symbols.</li>
-<li>Weekly review: clean expired alerts, adjust levels.</li>
-<li>On eToro, use fractional sizing (stocks) or minimum crypto where allowed; avoid oversizing.</li>
+<li>Create an “eToro” watchlist for your priority instruments.</li>
+<li>Duplicate one breakout template and one pullback template across the markets you monitor weekly.</li>
+<li>Write explicit alert messages with the asset, level, direction, and action to review.</li>
+<li>Run a weekly cleanup to remove expired alerts and tighten stale levels.</li>
 </ol>
 </section>
-<section>
-<h2>FAQ</h2>
-<ul>
-<li><strong>Do alerts execute trades?</strong> No, they only notify. You place the order on eToro.</li>
-<li><strong>Do I need a paid TradingView plan?</strong> Yes, to keep multiple alerts live.</li>
-<li><strong>Crypto unavailable on my eToro?</strong> Disable crypto templates; stick to stocks/ETFs.</li>
-</ul>
-</section>
-<p class="disclaimer">Copytrading or crypto investing is highly volatile and unregulated in some EU countries. No consumer protection. Taxes on profits may apply. Past performance does not guarantee future results.</p>
 
+<p class="disclaimer">Investing involves risk. CFDs are complex instruments, and copy trading or crypto exposure can lead to rapid losses. This page is informational only and is not personalized investment advice.</p>

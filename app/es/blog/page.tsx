@@ -1,7 +1,28 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { getLocalizedBlogPosts } from '@/lib/content';
+import { buildAlternatesForBlogIndex, getOgImage } from '@/lib/seo';
 
 export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Guías, comparativas y reseñas para empezar y mejorar.',
+  alternates: buildAlternatesForBlogIndex('es'),
+  openGraph: {
+    type: 'website',
+    title: 'Blog',
+    description: 'Guías, comparativas y reseñas para empezar y mejorar.',
+    url: '/es/blog',
+    images: [{ url: getOgImage('es') }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog',
+    description: 'Guías, comparativas y reseñas para empezar y mejorar.',
+    images: [getOgImage('es')],
+  },
+};
 
 export default async function EsBlogPage() {
   const posts = await getLocalizedBlogPosts('es');
@@ -27,4 +48,3 @@ export default async function EsBlogPage() {
     </div>
   );
 }
-
