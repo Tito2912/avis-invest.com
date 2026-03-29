@@ -29,6 +29,7 @@ export function SiteHeader() {
   const home = homeHref(lang);
   const guideEtoroHref = pageHref(lang, 'guide-etoro');
   const bitpandaHref = pageHref(lang, 'bitpanda');
+  const nickelHref = '/compte-nickel';
   const blogHref = blogIndexHref(lang);
   const methodologyHref = pageHref(lang, METHODOLOGY_SLUGS[lang]);
   const sourcesHref = pageHref(lang, SOURCES_SLUGS[lang]);
@@ -47,6 +48,11 @@ export function SiteHeader() {
           <Link className="brand" href={bitpandaHref}>
             Guide Bitpanda
           </Link>
+          {lang === 'fr' ? (
+            <Link className="brand" href={nickelHref}>
+              Compte Nickel
+            </Link>
+          ) : null}
         </div>
 
         <div className="header-right">

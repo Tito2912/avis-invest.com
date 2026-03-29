@@ -59,6 +59,7 @@ export function SiteFooter() {
   const contactHref = pageHref(lang, CONTACT_SLUGS[lang]);
   const privacyHref = pageHref(lang, PRIVACY_SLUGS[lang]);
   const legalHref = pageHref(lang, LEGAL_SLUGS[lang]);
+  const nickelHref = '/compte-nickel';
 
   return (
     <footer className="footer">
@@ -68,6 +69,7 @@ export function SiteFooter() {
           <Link href={aboutHref}>{labels.about}</Link>
           <Link href={methodologyHref}>{labels.methodology}</Link>
           <Link href={sourcesHref}>{labels.sources}</Link>
+          {lang === 'fr' ? <Link href={nickelHref}>Compte Nickel</Link> : null}
           <Link href={contactHref}>{labels.contact}</Link>
           <Link href={privacyHref}>{labels.privacy}</Link>
           <Link href={legalHref}>{labels.legal}</Link>
