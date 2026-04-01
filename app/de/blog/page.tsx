@@ -6,19 +6,19 @@ import { buildAlternatesForBlogIndex, getOgImage } from '@/lib/seo';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Blog — eToro & Bitpanda-Guides',
   description: 'Guides, Vergleiche und Reviews, um zu starten und besser zu werden.',
   alternates: buildAlternatesForBlogIndex('de'),
   openGraph: {
     type: 'website',
-    title: 'Blog',
+    title: 'Blog — eToro & Bitpanda-Guides',
     description: 'Guides, Vergleiche und Reviews, um zu starten und besser zu werden.',
     url: '/de/blog',
     images: [{ url: getOgImage('de') }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog',
+    title: 'Blog — eToro & Bitpanda-Guides',
     description: 'Guides, Vergleiche und Reviews, um zu starten und besser zu werden.',
     images: [getOgImage('de')],
   },

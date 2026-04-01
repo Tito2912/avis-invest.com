@@ -44,7 +44,7 @@ export default async function EnBlogPostPage({ params }: { params: Promise<{ slu
   if (!post) return notFound();
 
   const articleJsonLd = buildArticleJsonLd(post);
-  const breadcrumbJsonLd = buildBreadcrumbJsonLd(post);
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd(post, { lang: 'en', includeBlog: true });
 
   return (
     <>

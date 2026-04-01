@@ -4,13 +4,13 @@ import { getAllPages } from '@/lib/content';
 import { buildAlternatesForHome, getOgImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Guides eToro & Bitpanda (2026) — avis-invest.com',
+  title: 'Guides eToro & Bitpanda (2026) : frais & risques',
   description:
     'Guides pratiques eToro et Bitpanda : frais, CopyTrading, risques, retraits et checklist avant dépôt. Contenu informatif (pas un conseil financier).',
   alternates: buildAlternatesForHome('fr'),
   openGraph: {
     type: 'website',
-    title: 'Guides eToro & Bitpanda (2026) — avis-invest.com',
+    title: 'Guides eToro & Bitpanda (2026) : frais & risques',
     description:
       'Guides pratiques eToro et Bitpanda : frais, CopyTrading, risques, retraits et checklist avant dépôt.',
     url: '/',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Guides eToro & Bitpanda (2026) — avis-invest.com',
+    title: 'Guides eToro & Bitpanda (2026) : frais & risques',
     description:
       'Guides pratiques eToro et Bitpanda : frais, CopyTrading, risques, retraits et checklist avant dépôt.',
     images: [getOgImage('fr')],

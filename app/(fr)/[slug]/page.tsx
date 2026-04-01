@@ -44,7 +44,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   if (!post) return notFound();
 
   const articleJsonLd = buildArticleJsonLd(post);
-  const breadcrumbJsonLd = buildBreadcrumbJsonLd(post);
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd(post, { lang: 'fr' });
 
   return (
     <>

@@ -44,7 +44,7 @@ export default async function DePage({ params }: { params: Promise<{ slug: strin
   if (!post) return notFound();
 
   const articleJsonLd = buildArticleJsonLd(post);
-  const breadcrumbJsonLd = buildBreadcrumbJsonLd(post);
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd(post, { lang: 'de' });
 
   return (
     <>
