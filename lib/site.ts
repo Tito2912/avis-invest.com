@@ -1,6 +1,7 @@
 export const SITE = {
   baseUrl: 'https://avis-invest.com',
   domain: 'avis-invest.com',
+  ga4Id: 'G-GL3T4Y8WHK',
   defaultLang: 'fr',
   supportedLangs: ['fr', 'en', 'es', 'de'] as const,
 } as const;

@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/SiteFooter';
 import { SiteHeader } from '@/components/SiteHeader';
 import { LangHtmlUpdater } from '@/components/LangHtmlUpdater';
 import { SiteJsonLd } from '@/components/SiteJsonLd';
+import { CookieBanner } from '@/components/CookieBanner';
 import { getOgImage } from '@/lib/seo';
 
 const SITE_NAME = 'Avis Invest';
@@ -49,8 +50,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteHeader />
         <main className="container">{children}</main>
         <SiteFooter />
+        <CookieBanner />
       </body>
     </html>
   );
 }
-

@@ -48,3 +48,11 @@ a:hover{text-decoration:underline}
 .cta-btn:hover{text-decoration:none;filter:brightness(.98)}
 .cta-btn.big{padding:12px 18px;font-size:16px}
 .cta-center{text-align:center;margin-top:40px}
+
+/* Cookie banner (GA4 opt-in) */
+.cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;border:1px solid var(--border);background:#fff;border-radius:14px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,.08);display:flex;gap:14px;align-items:center;justify-content:space-between;z-index:50}
+.cookie-banner p{margin:0;color:var(--muted);font-size:14px}
+.cookie-banner.hidden{display:none}
+.cookie-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.cookie-btn{display:inline-block;background:#fff;color:var(--fg);border:1px solid var(--border);border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer}
+.cookie-btn:hover{filter:brightness(.98)}
