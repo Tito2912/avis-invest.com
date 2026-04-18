@@ -1,7 +1,33 @@
 # Audit SEO (focus CTR) — avis-invest.com
 
-Date : 2026-04-01  
+Date : 2026-04-18  
 Objectif : améliorer le CTR organique (meilleure “snippet appeal” + meilleure adéquation requête/intention).
+
+## 0) Snapshot GSC (exports du 2026-04-18)
+
+Périodes exportées :
+- **3 mois** (2026-01-17 → 2026-04-16) : **3 clics**, **4003 impressions**, **CTR 0,075 %**, **position moyenne 11,90**
+- **28 jours** (2026-03-20 → 2026-04-16) : **1 clic**, **2018 impressions**, **CTR 0,050 %**, **position moyenne 9,72**
+
+Constats rapides :
+- Les impressions viennent surtout du **desktop** (28j : 1841 impr, pos 9,10) ; **mobile** est plus bas (28j : 177 impr, pos 16,18).
+- Pays : très gros volume **US** (28j : 992 impr, 0 clic) → priorité aux pages **EN** (snippets plus “trust & compliance”).
+
+### 0.1 Opportunités CTR (position <= 10)
+
+Pages (28j, impr >= 30, CTR 0) :
+- `/en/blog/etoro-guide-2025-fees-regulation` — 930 impr, pos 8,34
+- `/en/guide-etoro` — 91 impr, pos 7,90
+- `/es/blog/etoro-guia-2025-tarifas-regulacion` — 51 impr, pos 6,86
+- `/etoro-fonctionnement-frais-regulations-2025` — 50 impr, pos 9,68
+- `/en/blog/bitpanda-vs-etoro-2026` — 47 impr, pos 8,64
+- `/de/blog/etoro-guide-2025-gebuehren-regulierung` — 30 impr, pos 6,13
+
+Requêtes (28j, impr >= 10, pos <= 10, CTR 0) :
+- `license # 109/10 ...` — 133 impr, pos 5,25 (gros mismatch snippet/intention)
+- `etoro avis` — 26 impr, pos 5,58
+- `avis etoro` — 15 impr, pos 3,40
+- `etoro fees stocks europe 2025 or 2026` — 13 impr, pos 6,85
 
 ## 1) Ce qui influence le CTR (à ne pas confondre)
 
@@ -59,6 +85,24 @@ Titres raccourcis sur les pages les plus longues (FR/EN/DE/ES), par ex. :
 - `content/es/blog/bitpanda-seguridad-2026/index.mdx`
 - `content/es/blog/etoro-deposito-retiro-2026/index.mdx`
 
+### 3.3 Optimisations déployées (2026-04-18) — focus requêtes “régulation/licences”
+
+Objectif : améliorer l’adéquation snippet ↔ intention, surtout sur les requêtes “licence / regulation / fees”.
+
+Changements appliqués :
+- **Titles + meta descriptions** enrichis avec signaux de confiance (ex : **CySEC 109/10**, **FCA 583263**, **ASIC 491139**) sur les pages eToro les plus visibles.
+- Ajout du champ `faq:` dans le frontmatter pour activer le JSON-LD **FAQPage** (quand disponible) sur les pages prioritaires.
+- Correction des dates “Mis à jour / Updated” affichées dans les guides (cohérence avec `updatedAt`).
+
+Fichiers concernés :
+- `content/en/blog/etoro-guide-2025-fees-regulation/index.mdx`
+- `content/en/guide-etoro.mdx`
+- `content/guide-etoro.mdx`
+- `content/etoro-fonctionnement-frais-regulations-2025.mdx`
+- `content/es/blog/etoro-guia-2025-tarifas-regulacion/index.mdx`
+- `content/de/blog/etoro-guide-2025-gebuehren-regulierung/index.mdx`
+- `content/en/blog/bitpanda-vs-etoro-2026/index.mdx`
+
 ## 4) Données structurées (rich results → CTR)
 
 Déjà présent :
@@ -69,6 +113,7 @@ Déjà présent :
 Ajouté :
 - `Organization`
 - `WebSite`
+- `Article.mainEntityOfPage` au format **WebPage** (meilleure conformité Schema.org)
 
 ## 5) Comment mesurer (Google Search Console)
 
@@ -84,9 +129,9 @@ Workflow recommandé (sur 28 jours) :
 
 ## 6) Prochaines actions (priorisées)
 
-1. Déployer ces correctifs (favicon + `lang` serveur + JSON-LD site + titles raccourcis).
-2. Exporter GSC (Pages + Requêtes) et cibler le top 10 des pages à fort volume (positions 1–10) → optimisation title/description “sur-mesure”.
+1. Attendre **10–14 jours** (après déploiement) puis comparer **CTR à position comparable** sur les pages prioritaires.
+2. Dans GSC (28 jours), refaire le tri **Pages (Impressions)** + filtre **Position <= 10** pour vérifier que les URLs eToro ciblées gagnent du CTR.
 3. Vérifier dans GSC :
    - Apparence dans les résultats → Rich results / Données structurées
    - Indexation → anomalies `hreflang` / “page avec balise canonique incorrecte” (si présentes)
-
+4. Option “impressions” : renforcer le maillage interne vers les pages eToro (depuis `/en/`, `/en/blog`, `/blog`) avec ancres orientées intention (fees/regulation/safety).

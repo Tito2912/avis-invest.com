@@ -15,7 +15,7 @@ export function buildArticleJsonLd(post: Post) {
     '@type': 'Article',
     headline: post.title,
     description: post.description,
-    mainEntityOfPage: url,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     datePublished: published,
     dateModified: modified,
     author: [{ '@type': 'Organization', name: BRAND }],
