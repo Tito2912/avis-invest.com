@@ -130,6 +130,13 @@ async function buildTranslationIndex(): Promise<TranslationIndex> {
   return index;
 }
 
+function withXDefault(languages: Record<string, string>): Record<string, string> {
+  if (!languages['x-default'] && languages[SITE.defaultLang]) {
+    return { ...languages, 'x-default': languages[SITE.defaultLang] };
+  }
+  return languages;
+}
+
 export function getOgImage(lang: Lang): string {
   if (lang === 'en') return '/images/image-hero-en.png';
   if (lang === 'es') return '/images/image-hero-es.png';
@@ -141,14 +148,14 @@ export function buildAlternatesForHome(lang: Lang): Metadata['alternates'] {
   const canonical = homeHref(lang);
   const languages: Record<string, string> = {};
   for (const l of SITE.supportedLangs) languages[l] = homeHref(l);
-  return { canonical, languages };
+  return { canonical, languages: withXDefault(languages) };
 }
 
 export function buildAlternatesForBlogIndex(lang: Lang): Metadata['alternates'] {
   const canonical = blogIndexHref(lang);
   const languages: Record<string, string> = {};
   for (const l of SITE.supportedLangs) languages[l] = blogIndexHref(l);
-  return { canonical, languages };
+  return { canonical, languages: withXDefault(languages) };
 }
 
 export async function buildAlternatesForPage({
@@ -167,7 +174,7 @@ export async function buildAlternatesForPage({
     const index = await getTranslationIndex();
     const entry = index.get(currentFm.translationKey);
     if (entry && Object.keys(entry).length) {
-      return { canonical, languages: entry as Record<string, string> };
+      return { canonical, languages: withXDefault(entry as Record<string, string>) };
     }
   }
 
@@ -185,7 +192,7 @@ export async function buildAlternatesForPage({
     languages[l] = fm?.canonical ?? pageHref(l, targetSlug);
   }
 
-  return { canonical, languages: Object.keys(languages).length ? languages : undefined };
+  return { canonical, languages: Object.keys(languages).length ? withXDefault(languages) : undefined };
 }
 
 export async function buildAlternatesForBlogPost({
@@ -203,7 +210,7 @@ export async function buildAlternatesForBlogPost({
     const index = await getTranslationIndex();
     const entry = index.get(currentFm.translationKey);
     if (entry && Object.keys(entry).length) {
-      return { canonical, languages: entry as Record<string, string> };
+      return { canonical, languages: withXDefault(entry as Record<string, string>) };
     }
   }
 
@@ -217,5 +224,5 @@ export async function buildAlternatesForBlogPost({
     languages[l] = fm?.canonical ?? `/${l}/blog/${slug}`;
   }
 
-  return { canonical, languages: Object.keys(languages).length ? languages : undefined };
+  return { canonical, languages: Object.keys(languages).length ? withXDefault(languages) : undefined };
 }
