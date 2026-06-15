@@ -26,15 +26,6 @@ export function SiteHeader() {
           ? { home: 'Startseite', blog: 'Blog', methodology: 'Methodik', sources: 'Quellen', legal: 'Rechtliche Hinweise' }
           : { home: 'Accueil', blog: 'Blog', methodology: 'Méthodo', sources: 'Sources', legal: 'Mentions légales' };
 
-  const logoAlt =
-    lang === 'en'
-      ? 'Avis Invest logo'
-      : lang === 'es'
-        ? 'Logotipo de Avis Invest'
-        : lang === 'de'
-          ? 'Avis Invest Logo'
-          : 'Logo Avis Invest';
-
   const home = homeHref(lang);
   const guideEtoroHref = pageHref(lang, 'guide-etoro');
   const bitpandaHref = pageHref(lang, 'bitpanda');
@@ -49,7 +40,7 @@ export function SiteHeader() {
       <div className="header-inner">
         <div className="brand-group">
           <a aria-label={labels.home} className="brand" href={home}>
-            <Image alt={logoAlt} height={36} priority src="/images/logo.png" width={120} />
+            <Image alt="avis-invest.com" height={36} priority src="/images/logo.png" width={120} />
           </a>
           <Link className="brand" href={guideEtoroHref}>
             Guide eToro
