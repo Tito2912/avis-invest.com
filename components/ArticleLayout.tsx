@@ -29,7 +29,7 @@ const ETORO_BANNERS: Record<
     width: 970,
     height: 250,
     ariaLabel: 'Ouvrir eToro (bannière sponsorisée)',
-    alt: 'eToro',
+    alt: 'Bannière publicitaire eToro - plateforme de trading et investissement',
   },
   en: {
     href: 'https://med.etoro.com/B21391_A126072_TClick.aspx',
@@ -37,7 +37,7 @@ const ETORO_BANNERS: Record<
     width: 728,
     height: 90,
     ariaLabel: 'Open eToro (sponsored banner)',
-    alt: 'eToro',
+    alt: 'eToro advertising banner - trading and investing platform',
   },
   es: {
     href: 'https://med.etoro.com/B21706_A126072_TClick.aspx',
@@ -45,7 +45,7 @@ const ETORO_BANNERS: Record<
     width: 970,
     height: 250,
     ariaLabel: 'Abrir eToro (banner patrocinado)',
-    alt: 'eToro',
+    alt: 'Banner publicitario de eToro - plataforma de trading e inversión',
   },
   de: {
     href: 'https://med.etoro.com/B21035_A126072_TClick.aspx',
@@ -53,7 +53,7 @@ const ETORO_BANNERS: Record<
     width: 970,
     height: 250,
     ariaLabel: 'eToro öffnen (gesponsertes Banner)',
-    alt: 'eToro',
+    alt: 'eToro Werbebanner - Trading- und Investitionsplattform',
   },
 };
 
@@ -131,7 +131,7 @@ export function ArticleLayout({ post }: { post: Post }) {
               >
                 <img
                   src="https://www.awin1.com/cshow.php?s=4612099&v=117793&q=590384&r=2738708"
-                  alt="TradingView"
+                  alt="Bannière publicitaire TradingView - graphiques et analyse de marchés financiers"
                   width="936"
                   height="120"
                   loading="lazy"
