@@ -59,7 +59,7 @@ export function SiteFooter() {
   const contactHref = pageHref(lang, CONTACT_SLUGS[lang]);
   const privacyHref = pageHref(lang, PRIVACY_SLUGS[lang]);
   const legalHref = pageHref(lang, LEGAL_SLUGS[lang]);
-  const nickelHref = '/compte-nickel';
+  const nickelHref = '/compte-nickel/';
 
   return (
     <footer className="footer">
