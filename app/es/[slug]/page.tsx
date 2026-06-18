@@ -19,19 +19,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const alternates = await buildAlternatesForPage({ lang: 'es', slug: post.slug, canonical });
 
   return {
-    title: post.title,
+    title: post.title + ' - Sécurité de Bitpanda en 2026',
     description: post.description,
     alternates,
     openGraph: {
       type: 'article',
-      title: post.title,
+      title: post.title + ' - Sécurité de Bitpanda en 2026',
       description: post.description,
       url: canonical,
       images: [{ url: getOgImage('es') }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.title,
+      title: post.title + ' - Sécurité de Bitpanda en 2026',
       description: post.description,
       images: [getOgImage('es')],
     },
