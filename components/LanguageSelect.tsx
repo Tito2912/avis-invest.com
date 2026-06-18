@@ -106,7 +106,7 @@ export function LanguageSelect() {
   return (
     <div className="lang-select-container">
       <span aria-hidden="true" className="globe-icon">
-        <img alt="" height={18} src="/images/globe.svg" width={18} />
+        <img alt="Sélecteur de langue" height={18} src="/images/globe.svg" width={18} />
       </span>
       <label className="sr-only" htmlFor={selectId}>
         {label}
