@@ -13,8 +13,8 @@ const BASE_URL = 'https://avis-invest.com';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: SITE_NAME,
-    template: '%s',
+    default: 'Avis Invest : guides et comparatifs eToro & Bitpanda',
+    template: `%s | ${SITE_NAME}`,
   },
   description: 'Guides eToro & Bitpanda : frais, CopyTrading, retraits, sécurité, régulation et risques (contenu informatif).',
   icons: {
