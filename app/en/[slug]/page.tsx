@@ -19,19 +19,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const alternates = await buildAlternatesForPage({ lang: 'en', slug: post.slug, canonical });
 
   return {
-    title: post.title,
+    title: 'Bitpanda Security: What You Need to Know in 2026',
     description: post.description,
     alternates,
     openGraph: {
       type: 'article',
-      title: post.title,
+      title: 'Bitpanda Security: What You Need to Know in 2026',
       description: post.description,
       url: canonical,
       images: [{ url: getOgImage('en') }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.title,
+      title: 'Bitpanda Security: What You Need to Know in 2026',
       description: post.description,
       images: [getOgImage('en')],
     },
