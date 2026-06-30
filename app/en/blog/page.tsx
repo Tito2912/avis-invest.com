@@ -7,19 +7,19 @@ export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
   title: 'Blog — eToro & Bitpanda guides',
-  description: 'Guides, comparisons and reviews to get started and improve.',
+  description: 'Guides, comparisons and reviews on eToro and Bitpanda to help you get started, understand investing platforms and improve your decisions.',
   alternates: buildAlternatesForBlogIndex('en'),
   openGraph: {
     type: 'website',
     title: 'Blog — eToro & Bitpanda guides',
-    description: 'Guides, comparisons and reviews to get started and improve.',
+    description: 'Guides, comparisons and reviews on eToro and Bitpanda to help you get started, understand investing platforms and improve your decisions.',
     url: '/en/blog',
     images: [{ url: getOgImage('en') }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Blog — eToro & Bitpanda guides',
-    description: 'Guides, comparisons and reviews to get started and improve.',
+    description: 'Guides, comparisons and reviews on eToro and Bitpanda to help you get started, understand investing platforms and improve your decisions.',
     images: [getOgImage('en')],
   },
 };

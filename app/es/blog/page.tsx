@@ -7,19 +7,19 @@ export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
   title: 'Blog — guías eToro y Bitpanda',
-  description: 'Guías, comparativas y reseñas para empezar y mejorar.',
+  description: 'Guías, comparativas y reseñas sobre eToro y Bitpanda para empezar a invertir, comparar plataformas y mejorar tus decisiones paso a paso.',
   alternates: buildAlternatesForBlogIndex('es'),
   openGraph: {
     type: 'website',
     title: 'Blog — guías eToro y Bitpanda',
-    description: 'Guías, comparativas y reseñas para empezar y mejorar.',
+    description: 'Guías, comparativas y reseñas sobre eToro y Bitpanda para empezar a invertir, comparar plataformas y mejorar tus decisiones paso a paso.',
     url: '/es/blog',
     images: [{ url: getOgImage('es') }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Blog — guías eToro y Bitpanda',
-    description: 'Guías, comparativas y reseñas para empezar y mejorar.',
+    description: 'Guías, comparativas y reseñas sobre eToro y Bitpanda para empezar a invertir, comparar plataformas y mejorar tus decisiones paso a paso.',
     images: [getOgImage('es')],
   },
 };
