@@ -7,7 +7,7 @@ export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
   title: 'Blog — guides eToro & Bitpanda',
-  description: 'Guides, comparatifs et avis pour débuter et progresser.',
+  description: 'Guides, comparatifs et avis sur eToro, Bitpanda et l\'investissement : tout pour débuter sereinement, progresser et choisir la plateforme adaptée à vos objectifs.',
   alternates: buildAlternatesForBlogIndex('fr'),
   openGraph: {
     type: 'website',
