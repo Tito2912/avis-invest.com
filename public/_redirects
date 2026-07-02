@@ -65,10 +65,6 @@ https://www.avis-invest.com/* https://avis-invest.com/:splat 301!
 /de/privacy-policy/index.html /de/privacy-policy 301!
 
 # Sources: keep clean canonical URLs without extension
-/sources/etoro-fr.html /sources/etoro-fr 301!
-/sources/etoro-fr/ /sources/etoro-fr 301!
-/sources/etoro-en.html /sources/etoro-en 301!
-/sources/etoro-en/ /sources/etoro-en 301!
 
 # Old blog numeric slugs -> canonical article URLs
 /blog-1 /etoro-fonctionnement-frais-regulations-2025 301!
