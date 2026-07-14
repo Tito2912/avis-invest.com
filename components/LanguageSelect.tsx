@@ -70,7 +70,7 @@ function normalizePathname(pathname: string): string {
 
 function getLangFromPathname(pathname: string): Lang {
   const p = normalizePathname(pathname);
-  if (p === '/en' || p.startsWith('/en/')) return 'en';
+  if (p === '/en' || p.startsWith('/en')) return 'en';
   if (p === '/es' || p.startsWith('/es/')) return 'es';
   if (p === '/de' || p.startsWith('/de/')) return 'de';
   return 'fr';
