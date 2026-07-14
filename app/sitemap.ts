@@ -29,6 +29,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const urls: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date() },
     { url: `${baseUrl}/blog`, lastModified: new Date() },
+    { url: `${baseUrl}/sources/etoro-en`, lastModified: new Date() },
+    { url: `${baseUrl}/sources/etoro-fr`, lastModified: new Date() },
     ...frPages,
   ];
 
