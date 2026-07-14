@@ -131,8 +131,11 @@ async function buildTranslationIndex(): Promise<TranslationIndex> {
 }
 
 function withXDefault(languages: Record<string, string>): Record<string, string> {
-  if (!languages['x-default'] && languages['en']) {
-    return { ...languages, 'x-default': languages['en'] };
+  if (!languages['x-default']) {
+    const fallback = languages['en'] ?? languages[SITE.defaultLang] ?? Object.values(languages)[0];
+    if (fallback) {
+      return { ...languages, 'x-default': fallback };
+    }
   }
   return languages;
 }
